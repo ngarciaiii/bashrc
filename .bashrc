@@ -37,6 +37,14 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 # Get repo info
+# all are ANSI code, google for color table
+# escape sequence = \33
+# bright pink = 38;5;198m
+# bright green = 38;5;46m
+# light blue = 01;96m
+# light purple = 01;94m
+# bright yellow = 38;5;227m
+
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[38;5;198m\]\u\[\033[38;5;46m\]@\[\033[01;96m\]\h\[\033[01;94m\][\w\\]\[\033[38;5;46m\]:\[\033[38;5;46m\]~\[\033[38;5;46m\]\$\[\033[38;5;227m\] '
     PS2="> "
