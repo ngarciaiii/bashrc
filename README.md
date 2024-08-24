@@ -4,4 +4,4 @@ thanks to KeizerDev/.bashrc
 
 Just copy .bashrc and paste it over
 
-![terminal_prompt](https://github.com/user-attachments/assets/c1817885-828b-4be0-88fb-1e102019de2f)
+![terminal_prompt](https://github.com/user-attachments/assets/910a74a6-dffa-457a-9242-d7bd8fcd66f5)
