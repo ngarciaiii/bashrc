@@ -1,5 +1,6 @@
 # bashrc
 parrot os bashrc prompt one-liner
+
 thanks to KeizerDev/.bashrc (slightly different)
 
 Just copy .bashrc and paste it over
