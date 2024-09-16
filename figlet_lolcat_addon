@@ -42,3 +42,5 @@ selected_font=${figfonts[$font_index]}
 selected_message=${messages[$messages_index]}
 
 figlet -f "$selected_font" "$selected_message" | lolcat
+
+#########################################################
