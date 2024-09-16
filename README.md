@@ -16,6 +16,10 @@ two options: one word for daily, or rotating messages every times when open up a
 copy n paste either one to the bottom of ~/.bashrc file 
 don't forget to `source ~/.bashrc`
 
-# example
+# before add ~/.bashrc example
 
 ![fig_example](https://github.com/user-attachments/assets/95880238-2976-499d-9400-880f1e5bd167)
+
+# after add to ~/.bashrc example
+
+![fig_prompt](https://github.com/user-attachments/assets/ef587561-f3ca-4fab-8279-8f833cebb4c0)
