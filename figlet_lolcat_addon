@@ -35,7 +35,7 @@ OR
 figfonts=("computer" "maxiwi" "miniwi" "roman" "ublk" "smisome1" "shadow" "cosmic" "speed" "soft")
 messages=("any" "word" "might" "want" "to" "use" "as" "daily" "message")
 
-font_index=$((RANDOM % ${figfonts[@]}))
+font_index=$((RANDOM % ${#figfonts[@]}))
 messages_index=$((RANDOM % ${#messages[@]}))
 
 selected_font=${figfonts[$font_index]}
