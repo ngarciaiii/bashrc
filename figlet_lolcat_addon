@@ -1,0 +1,44 @@
+add figlet with lolcat to terminal prompt
+
+should have figlet in /usr/share but might not have many fonts, so might want to do below:
+`git clone git@github.com:ngarciaiii/figlet-fonts.git`
+`sudo mv figlet-fonts/* /usr/share/figlet/`
+`showfigfonts`
+
+just in case don't have lolcat in /usr/share:
+`git clone git@github.com:ngarciaiii/lolcat.git`
+`sudo mv lolcat /usr/share/`
+`gem install lolcat`
+
+NOTE: I cleaned up lolcat files in directory with "file_utils repo", turn filenames into lowercases and no spaces and no quotes
+NOTE: hassle to make lolcat files to work if they are capitalized or in quotes
+
+copy n paste either one below to the bottom of ~/.bashrc
+don't foget to `source ~/.bashrc` afterward
+
+#####################################################
+# if only want to use one word in terminal prompt for daily use
+# add below to bottom of the ~/.bashrc
+
+figlet -f "speed" ishowspeed | lolcat
+
+#####################################################
+
+OR
+
+#####################################################
+# if want to rotate fonts and message on terminal prompt
+# add below to bottom of ~/.bashrc
+
+# List of figlet fonts to rotate
+# delete or add more fonts if want
+figfonts=("computer" "maxiwi" "miniwi" "roman" "ublk" "smisome1" "shadow" "cosmic" "speed" "soft")
+messages=("any" "word" "might" "want" "to" "use" "as" "daily" "message")
+
+font_index=$((RANDOM % ${figfonts[@]}))
+messages_index=$((RANDOM % ${#messages[@]}))
+
+selected_font=${figfonts[$font_index]}
+selected_message=${messages[$messages_index]}
+
+figlet -f "$selected_font" "$selected_message" | lolcat
