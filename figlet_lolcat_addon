@@ -33,7 +33,7 @@ OR
 # List of figlet fonts to rotate
 # delete or add more fonts if want
 figfonts=("computer" "maxiwi" "miniwi" "roman" "ublk" "smisome1" "shadow" "cosmic" "speed" "soft")
-messages=("any" "word" "might" "want" "to" "use" "as" "daily" "message")
+messages=("any" "word" "might" "want" "to" "use" "as" "message" "MOTD")
 
 font_index=$((RANDOM % ${#figfonts[@]}))
 messages_index=$((RANDOM % ${#messages[@]}))
