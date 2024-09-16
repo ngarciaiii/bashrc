@@ -15,9 +15,8 @@ if want to add figlet + lolcat to terminal prompt
 
 two options: 
  - one word for daily
- -  rotating messages every times when open up a terminal prompt 
+ -  rotating messages every times when open up a terminal prompt
 
-copy n paste either one to the bottom of ~/.bashrc file 
 don't forget to `source ~/.bashrc`
 
 # before add ~/.bashrc example
