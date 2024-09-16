@@ -10,7 +10,7 @@ just in case don't have lolcat in /usr/share:
 `sudo mv lolcat /usr/share/`
 `gem install lolcat`
 
-NOTE: I cleaned up lolcat files in directory with "file_utils repo", turn filenames into lowercases and no spaces and no quotes
+NOTE: I cleaned up lolcat files in directory with "filename_utils repo", turn filenames into lowercases and no spaces and no quotes
 NOTE: hassle to make lolcat files to work if they are capitalized or in quotes
 
 copy n paste either one below to the bottom of ~/.bashrc
